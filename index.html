@@ -4,9 +4,37 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>K-means algorithm</title>
+     <script type="text/javascript" src="\ajax.googleapis.com\ajax\libs\jquery\2.2.0\jquery.min.js"></script>
+     <script type="text/javascript" src="\cdnjs.cloudflare.com\ajax\libs\mathjs\5.4.0\math.min.js"></script>
+
  </head>
- <body> 
-  <script src='http://d3js.org/d3.v2.js'></script>
+ <body>
+ <style>
+     @import url('css/my-style.css');
+ </style>
+ <div class="content">
+     <div class="helper-text-1">
+         <h1>Виберіть Будь ласка зображення для аналізу </h1>
+     </div>
+     <!--            <a href="/test.html">test</a>-->
+     <input id="file-input" class="img_data" type="file"/>​
+ </div>
+ <div class="img-conteiner hidden">
+     <div class="base-img-container">
+         <img src="#" id="upload-img" alt="image"/>
+         <p id="text_loading_status"></p>
+     </div>
+     <div id="container2"></div>
+ </div>
+ <div class="system-info-center">
+
+ </div>
+ <div id="container"></div>
+
+ <script type="text/javascript" src="get_data_from_img.js"></script>
+
+ <script src='http://d3js.org/d3.v2.js'></script>
+
     <div id="kmeans">
       <svg></svg>
     </div>
@@ -14,7 +42,9 @@
     <script type="text/javascript" src="./KMeans.js">  </script>
 
     <script type="text/javascript">
-        let kmeansInstance = new KMeans(5, 40);
+        let kmeansInstance = new KMeans(5, 80);
     </script>
+
+
  </body>
 </html>

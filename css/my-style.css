@@ -1,0 +1,96 @@
+div.content
+{
+    position: relative
+}
+div.content
+{
+    background: black;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+div.img-conteiner
+{
+    margin-top: 20px;
+    margin: 0 auto;
+    /*width: 200px;*/
+    padding: 20px;
+}
+img#line-img
+{
+    position: absolute;
+    left: 20px;
+}
+
+div.system-info-center
+{
+    margin-top: 15%;
+    margin: 0;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.hidden
+{
+    display: none;
+}
+div.controle-buttons-chart2d
+{
+    margin-right: 0px;
+}
+img#line2-img
+{
+    position: absolute;
+    left: 20px;
+    z-index: 3;
+}
+img#line3-img
+{
+    position: absolute;
+    left: 1px;
+    z-index: 999;
+}
+div.img-data-user-inpout
+{
+    position: absolute;
+    /*margin-left: 50%;*/
+    display: table;
+}
+.length-to-img-text
+{
+    display: table-row;
+}
+.x-lenfth-img-text
+{
+    display: table-row;
+}
+.y-lenfth-img-text
+{
+    display: table-row;
+}
+#length-to-img-inpout
+{
+    display: table-row;
+}
+#x-lenfth-img-inpout
+{
+    display: table-row;
+}
+#y-lenfth-img-inpout
+{
+    display: table-row;
+}
+.return-data-text
+{
+    display: table-row;
+    font-weight: bold;
+}
+.return-data-value
+{
+    display: table-row;
+    font-weight: bolder;
+}
